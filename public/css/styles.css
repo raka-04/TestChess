@@ -1,0 +1,41 @@
+/* Chessboard grid */
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 1 / 1; /* ensures square board */
+    transform: rotate(0deg);
+}
+
+/* Each square */
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square.light {
+    background-color: #f0d9b5;
+}
+
+.square.dark {
+    background-color: #b58863;
+}
+
+/* Chess piece images */
+.piece-img {
+    width: 80%;
+    height: 80%;
+    cursor: grab;
+}
+
+/* Flip board for black player */
+.flipped {
+    transform: rotate(180deg);
+}
+
+.flipped .piece-img {
+    transform: rotate(180deg);
+}

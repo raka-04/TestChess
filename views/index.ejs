@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Chess Game</title>
+</head>
+<body class="bg-zinc-900 text-white">
+
+    <div class="w-full h-screen flex flex-col items-center justify-center gap-6">
+        <div id="status" class="text-2xl font-bold text-yellow-400"></div>
+        <div class="chessboard max-w-[480px] w-full aspect-square"></div>  
+
+        <button id="newGameBtn" class="hidden px-4 py-2 bg-green-600 rounded-lg hover:bg-green-700">
+            New Game
+        </button>
+    </div>
+
+
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js" integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/ChessGame.js"></script>
+</body>
+</html>
